@@ -1,0 +1,54 @@
+.todo {
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    &:first-child {
+      margin-bottom: 20px;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      padding: 10px 12px;
+
+      &.active {
+        background: rgba(255, 255, 255, 0.15);
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+        border-radius: 4px;
+      }
+      i {
+        display: inline-flex;
+        margin-right: 8px;
+        svg {
+            stroke: rgba(255, 255, 255, .8);
+        }
+      }
+      span {
+        color: rgba(255, 255, 255, .8);
+        line-height: 1;
+      }
+
+      .badge {
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
+        border-radius: 50%;
+        &--green {
+          background-color: #42B883;
+        }
+        &--blue {
+          background-color: #64C4ED;
+        }
+        &--pink {
+          background-color: #FFBBCC;
+        }
+        &--pink {
+          background-color: #FFBBCC;
+        }
+        &--pink {
+          background-color: #FFBBCC;
+        }
+      }
+    }
+  }
+}
